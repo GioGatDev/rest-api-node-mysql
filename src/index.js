@@ -12,5 +12,5 @@ app.use(require('./routes/empleados'));
 
 //Iniciando servidor
 app.listen(app.get('port'), () => {
-    console.log('Servidor activo en puerto', app.get('port'));
+    console.log(`Servidor conectado en puerto: ${app.get('port')}`);
 });
