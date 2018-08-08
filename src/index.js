@@ -8,7 +8,7 @@ app.set('port', process.env.PORT || 3000); // En caso de despliegue de app
 app.use(express.json());
 
 //Routes
-
+app.use(require('./routes/empleados'));
 
 //Iniciando servidor
 app.listen(app.get('port'), () => {
